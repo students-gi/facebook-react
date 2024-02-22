@@ -3,11 +3,12 @@ import './App.css';
 // Component imports
 import Heading1 from "./ui/atoms/Heading1";
 import Card from "./ui/molecules/card";
+import GuessANumber from "./ui/organisms/GuessANumber";
 
 function App() {
   return (
     <div id="App">
-      <Heading1 title='Creating Cards'/>
+      <Heading1 title='Creating Cards' />
 
       <Card
         title='Hello from 1st card&apos;s title!'
@@ -21,6 +22,11 @@ function App() {
       <Card
         title='Hello from 3rd card&apos;s title!'
       />
+
+      <hr/>
+      <Heading1 title='Buttons and their Click events' />
+
+      <GuessANumber />
     </div>
   );
 }
