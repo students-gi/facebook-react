@@ -7,10 +7,10 @@ import Greeting from "./ui/atoms/Greeting";
 function App() {
   return (
     <div id="App">
-      <Heading1 />
+      <Heading1 title='Some modified heading text'/>
 
-      <Greeting name="Bob" />
-      <Greeting name="Jack" />
+      <Greeting name='Bob' />
+      <Greeting name='Jack' />
     </div>
   );
 }

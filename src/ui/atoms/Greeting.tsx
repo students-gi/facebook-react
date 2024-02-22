@@ -1,6 +1,12 @@
-function Greeting(props:any) {
+import React from 'react';
+
+type GreetingProps = {
+  name: string
+}
+
+function Greeting({ name }: GreetingProps) {
   return (
-    <h2>Hello there, {props.name}</h2>
+    <h2>Hello there, {name}</h2>
   );
 }
 
