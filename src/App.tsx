@@ -2,8 +2,8 @@ import './App.css';
 
 // Component imports
 import Heading1 from "./ui/atoms/Heading1";
-import Card from "./ui/molecules/card";
-import GuessANumber from "./ui/organisms/GuessANumber";
+import Card from "./ui/molecules/Card";
+import GuessANumber from "./ui/molecules/GuessANumber";
 
 function App() {
   return (
