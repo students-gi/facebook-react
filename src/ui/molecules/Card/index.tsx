@@ -6,15 +6,16 @@ type CardProps = {
   title: string,
   subtitle?: string,
   paragraph?: string
+  className?: string
 }
 
-function Card({ title, subtitle, paragraph }: CardProps) {
+function Card({ title, subtitle, paragraph, className }: CardProps) {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${className}`}>
       <h2>{title}</h2>
-      <h3>{subtitle}</h3>
+      {subtitle ? <h3>{subtitle}</h3> : null}
 
-      <p>{paragraph}</p>
+      {paragraph ? <p>{paragraph}</p> : null}
     </div>
   );
 }

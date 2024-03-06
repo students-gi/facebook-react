@@ -1,0 +1,12 @@
+.DayTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em auto;
+  max-width: 30rem;
+}
+.DayTitles >h2{
+  text-align: center;
+
+  text-decoration: underline;
+}

@@ -7,6 +7,7 @@ import GuessANumber from "./ui/organisms/GuessANumber";
 import RegistrationForm from "./ui/organisms/RegistrationForm"
 import MealDisplay from "./ui/organisms/MealDisplay"
 import WalletDisplay from "./ui/organisms/WalletDisplay"
+import DayTitles from "./ui/organisms/DayTitles"
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Link to='/register'>Registration</Link>
         <Link to='/meals'>Meal list</Link>
         <Link to='/wallet'>Wallet</Link>
+        <Link to='/day'>Day names</Link>
       </nav>
       <Routes>
         <Route path='card' element={
@@ -48,6 +50,12 @@ function App() {
           <>
             <Heading1 title="React reducer hook" />
             <WalletDisplay />
+          </>
+        } />
+        <Route path='day' element={
+          <>
+            <Heading1 title="A conditional render based on the current weekday" />
+            <DayTitles />
           </>
         } />
       </Routes>
