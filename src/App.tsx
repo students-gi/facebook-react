@@ -5,6 +5,7 @@ import Heading1 from "./ui/atoms/Heading1";
 import CardDisplay from "./ui/organisms/CardDisplay";
 import GuessANumber from "./ui/organisms/GuessANumber";
 import RegistrationForm from "./ui/organisms/RegistrationForm"
+import MealDisplay from  "./ui/organisms/MealDisplay"
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
       <Heading1 title="React hooks & forms (kinda)" />
       <RegistrationForm />
+      <hr/>
+
+      <Heading1 title="React contexts" />
+      <MealDisplay />
     </div>
   );
 }

@@ -1,0 +1,10 @@
+#mealList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#mealCounter {
+  width: max-content;
+  margin: auto;
+}
