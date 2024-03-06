@@ -8,6 +8,7 @@ import RegistrationForm from "./ui/organisms/RegistrationForm"
 import MealDisplay from "./ui/organisms/MealDisplay"
 import WalletDisplay from "./ui/organisms/WalletDisplay"
 import DayTitles from "./ui/organisms/DayTitles"
+import ImageImport from "./ui/organisms/ImageImport"
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Link to='/meals'>Meal list</Link>
         <Link to='/wallet'>Wallet</Link>
         <Link to='/day'>Day names</Link>
+        <Link to='/images'>Images</Link>
       </nav>
       <Routes>
         <Route path='card' element={
@@ -56,6 +58,12 @@ function App() {
           <>
             <Heading1 title="A conditional render based on the current weekday" />
             <DayTitles />
+          </>
+        } />
+        <Route path='images' element={
+          <>
+            <Heading1 title="The various ways to import an image" />
+            <ImageImport />
           </>
         } />
       </Routes>
