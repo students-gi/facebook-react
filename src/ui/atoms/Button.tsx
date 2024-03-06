@@ -1,13 +1,13 @@
 import React, { MouseEventHandler } from 'react';
 
 type ButtonProps = {
-  clickHandler?: MouseEventHandler, // a JS function
+  onClick?: MouseEventHandler, // a JS function
   text: string
 }
 
-function Button({ text, clickHandler }: ButtonProps) {
+function Button({ text, onClick }: ButtonProps) {
   return (
-    <button onClick={clickHandler}>
+    <button onClick={onClick}>
       {text}
     </button>
   );

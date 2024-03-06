@@ -6,6 +6,7 @@ import CardDisplay from "./ui/organisms/CardDisplay";
 import GuessANumber from "./ui/organisms/GuessANumber";
 import RegistrationForm from "./ui/organisms/RegistrationForm"
 import MealDisplay from  "./ui/organisms/MealDisplay"
+import WalletDisplay from  "./ui/organisms/WalletDisplay"
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
       <Heading1 title="React contexts" />
       <MealDisplay />
+      <hr/>
+
+      <Heading1 title="React reducer hook" />
+      <WalletDisplay />
     </div>
   );
 }

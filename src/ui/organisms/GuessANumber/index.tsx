@@ -26,7 +26,7 @@ function GuessANumber() {
   return (
     <div id={styles.guess}>
       <Button
-        clickHandler={handleClick}
+        onClick={handleClick}
         text={`Guess a number between ${GUESS_MIN} and ${GUESS_MAX}`}
       />
     </div>
