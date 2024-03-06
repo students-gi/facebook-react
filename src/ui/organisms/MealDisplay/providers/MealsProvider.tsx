@@ -8,7 +8,7 @@ const mealsList = [
 ]
 
 function MealsProvider({ children }: { children: React.ReactNode }) {
-    const [meals, setMeals] = React.useState(mealsList);
+    const [meals] = React.useState(mealsList);
 
     return (
         <MealsContext.Provider value={meals}>

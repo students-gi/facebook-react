@@ -1,7 +1,7 @@
 import React from 'react';
 /*=====   Style imports   =====*/
 import styles from './style.module.css';
-import { useMealsContext } from '../../../providers/MealsProvider';
+import { useMealsContext } from './providers/MealsProvider';
 
 function MealCounter() {
   const meals = useMealsContext();
