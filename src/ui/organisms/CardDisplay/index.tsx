@@ -1,12 +1,12 @@
 import React from 'react';
 /*=====   Style imports   =====*/
-import './style.css';
+import styles from './style.module.css';
 /*===== Component imports =====*/
 import Card from "../../molecules/Card";
 
 function CardDisplay() {
   return (
-    <div id="cardDisplay">
+    <div id={styles.cardDisplay}>
       <Card
         title='Hello from 1st card&apos;s title!'
         subtitle='and a &quot;hey&quot; from 1st card&apos;s subtitle'
