@@ -4,6 +4,7 @@ import './App.css';
 import Heading1 from "./ui/atoms/Heading1";
 import Card from "./ui/molecules/Card";
 import GuessANumber from "./ui/molecules/GuessANumber";
+import RegistrationForm from "./ui/molecules/RegistrationForm"
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       <Heading1 title='Buttons and their Click events' />
 
       <GuessANumber />
+
+      <hr/>
+      <Heading1 title="React hooks & forms (kinda)" />
+
+      <RegistrationForm />
     </div>
   );
 }

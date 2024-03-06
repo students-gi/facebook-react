@@ -1,0 +1,35 @@
+#registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 30rem;
+}
+
+#registrationForm>.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#registrationForm>.input>label {
+  position: absolute;
+  display: block;
+  margin: -1em 0 0 1em;
+  padding: 0 0.5em;
+  background-color: white;
+  font-weight: bold;
+}
+
+#registrationForm>.input>input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#detailPreview {
+  display: flex;
+  gap: 0.5em;
+}
