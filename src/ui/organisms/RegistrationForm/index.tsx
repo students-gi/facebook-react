@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 /*=====   Style imports   =====*/
-import './style.css';
+import styles from './style.module.css';
 /*===== Component imports =====*/
 import Input from '../../atoms/Input';
 
@@ -13,7 +13,7 @@ function RegistrationForm() {
   });
 
   return (
-    <form id='registrationForm'>
+    <div id={styles.registrationForm}>
       <Input type='text'
         name='firstName'
         label="First name"
@@ -56,7 +56,7 @@ function RegistrationForm() {
         }}
       />
 
-      <div id='detailPreview'>
+      <div id={styles.detailPreview}>
         <label>Your details for preview: </label>
         <span>
           {/*
@@ -69,7 +69,7 @@ function RegistrationForm() {
           ({userDetails.email})
         </span>
       </div>
-    </form>
+    </div>
   );
 }
 

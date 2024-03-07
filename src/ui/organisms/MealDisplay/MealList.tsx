@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './style.module.css';
 /*=====  Context imports  =====*/
 import { useMealsContext } from "./providers/MealsProvider"
+/*===== Component imports =====*/
 import Card from "../../molecules/Card";
 
 function MealList() {

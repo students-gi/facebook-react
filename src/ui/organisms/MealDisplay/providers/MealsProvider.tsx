@@ -7,7 +7,11 @@ const mealsList = [
     "Potato chips"
 ]
 
-function MealsProvider({ children }: { children: React.ReactNode }) {
+type MealsProviderProps = {
+    children: React.ReactNode
+}
+
+function MealsProvider({ children }: MealsProviderProps) {
     const [meals] = React.useState(mealsList);
 
     return (

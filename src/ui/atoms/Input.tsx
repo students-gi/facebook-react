@@ -1,6 +1,8 @@
 // Copied from Abdul Basit On
 // https://www.codevertiser.com/reusable-input-component-react/
 import React from 'react';
+/*=====   Style imports   =====*/
+import styles from './style.module.css';
 
 type InputType = 'text' | 'number' | 'email' | 'password'
 interface InputProps {
@@ -23,7 +25,7 @@ function Input({
   onChange
 }: InputProps) {
   return (
-    <div className="input">
+    <div className={`${styles.input}`}>
       <label htmlFor={name}>{label}</label>
       <input
         type={type}

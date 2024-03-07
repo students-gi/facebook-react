@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 
 // Component imports
 import Heading1 from "./ui/atoms/Heading1";
@@ -13,8 +13,8 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div id="App">
-      <nav className='top-nav'>
+    <>
+      <nav id={styles.Links}>
         <Link to='/card'>Cards</Link>
         <Link to='/guess'>Number Guesser</Link>
         <Link to='/register'>Registration</Link>
@@ -23,51 +23,53 @@ function App() {
         <Link to='/day'>Day names</Link>
         <Link to='/images'>Images</Link>
       </nav>
-      <Routes>
-        <Route path='card' element={
-          <>
-            <Heading1 title='Creating Cards' />
-            <CardDisplay />
-          </>
-        } />
-        <Route path='guess' element={
-          <>
-            <Heading1 title='Buttons and their Click events' />
-            <GuessANumber />
-          </>
-        } />
-        <Route path='register' element={
-          <>
-            <Heading1 title="React hooks & forms (kinda)" />
-            <RegistrationForm />
-          </>
-        } />
-        <Route path='meals' element={
-          <>
-            <Heading1 title="React contexts" />
-            <MealDisplay />
-          </>
-        } />
-        <Route path='wallet' element={
-          <>
-            <Heading1 title="React reducer hook" />
-            <WalletDisplay />
-          </>
-        } />
-        <Route path='day' element={
-          <>
-            <Heading1 title="A conditional render based on the current weekday" />
-            <DayTitles />
-          </>
-        } />
-        <Route path='images' element={
-          <>
-            <Heading1 title="The various ways to import an image" />
-            <ImageImport />
-          </>
-        } />
-      </Routes>
-    </div>
+      <div id={styles.Content}>
+        <Routes>
+          <Route path='card' element={
+            <>
+              <Heading1 title='Creating Cards' />
+              <CardDisplay />
+            </>
+          } />
+          <Route path='guess' element={
+            <>
+              <Heading1 title='Buttons and their Click events' />
+              <GuessANumber />
+            </>
+          } />
+          <Route path='register' element={
+            <>
+              <Heading1 title="React hooks & forms (kinda)" />
+              <RegistrationForm />
+            </>
+          } />
+          <Route path='meals' element={
+            <>
+              <Heading1 title="React contexts" />
+              <MealDisplay />
+            </>
+          } />
+          <Route path='wallet' element={
+            <>
+              <Heading1 title="React reducer hook" />
+              <WalletDisplay />
+            </>
+          } />
+          <Route path='day' element={
+            <>
+              <Heading1 title="A conditional render based on the current weekday" />
+              <DayTitles />
+            </>
+          } />
+          <Route path='images' element={
+            <>
+              <Heading1 title="The various ways to import an image" />
+              <ImageImport />
+            </>
+          } />
+        </Routes>
+      </div>
+    </>
   );
 }
 
