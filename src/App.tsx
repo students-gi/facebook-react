@@ -9,6 +9,7 @@ import MealDisplay from "./ui/organisms/MealDisplay"
 import WalletDisplay from "./ui/organisms/WalletDisplay"
 import DayTitles from "./ui/organisms/DayTitles"
 import ImageImport from "./ui/organisms/ImageImport"
+import Soundboard from "./ui/organisms/Soundboard"
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Link to='/wallet'>Wallet</Link>
         <Link to='/day'>Day names</Link>
         <Link to='/images'>Images</Link>
+        <Link to='/sounds'>Soundboard</Link>
       </nav>
       <div id={styles.Content}>
         <Routes>
@@ -65,6 +67,12 @@ function App() {
             <>
               <Heading1 title="The various ways to import an image" />
               <ImageImport />
+            </>
+          } />
+          <Route path='sounds' element={
+            <>
+              <Heading1 title="A way to import audio into React" />
+              <Soundboard />
             </>
           } />
         </Routes>

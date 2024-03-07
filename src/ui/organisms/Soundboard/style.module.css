@@ -1,0 +1,10 @@
+div#Soundboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#Soundboard>button {
+  width: 8rem;
+  height: 7rem;
+}
