@@ -10,6 +10,7 @@ import WalletDisplay from "./ui/organisms/WalletDisplay"
 import DayTitles from "./ui/organisms/DayTitles"
 import ImageImport from "./ui/organisms/ImageImport"
 import Soundboard from "./ui/organisms/Soundboard"
+import Calculator from "./ui/organisms/Calculator"
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Link to='/day'>Day names</Link>
         <Link to='/images'>Images</Link>
         <Link to='/sounds'>Soundboard</Link>
+        <Link to='/calc'>Calculator</Link>
       </nav>
       <div id={styles.Content}>
         <Routes>
@@ -73,6 +75,12 @@ function App() {
             <>
               <Heading1 title="A way to import audio into React" />
               <Soundboard />
+            </>
+          } />
+          <Route path='calc' element={
+            <>
+              <Heading1 title="The 'Simplest Working Calculator' that Facebook could come up with" />
+              <Calculator />
             </>
           } />
         </Routes>
