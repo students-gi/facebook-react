@@ -2,7 +2,7 @@ import React from 'react';
 /*=====   Style imports   =====*/
 import styles from './style.module.css';
 /*=====   Asset imports   =====*/
-import image from '../../../assets/react-digital_ocean.jpg';
+import image from 'src/assets/react-digital_ocean.jpg';
 
 function ImageImport() {
   return (
@@ -14,7 +14,7 @@ function ImageImport() {
       <hr />
       <h3>Image displayed using a 'require' function</h3>
       <img
-        src={require('../../../assets/react-digital_ocean.jpg')}
+        src={require('src/assets/react-digital_ocean.jpg')}
         alt='' />
       <hr />
       <h3>Image displayed using an external website import</h3>

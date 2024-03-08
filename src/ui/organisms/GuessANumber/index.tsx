@@ -2,7 +2,7 @@ import React from 'react';
 /*=====   Style imports   =====*/
 import styles from './style.module.css';
 /*===== Component imports =====*/
-import Button from '../../atoms/Button';
+import Button from 'src/ui/atoms/Button';
 
 const GUESS_MIN = 1;
 const GUESS_MAX = 10;

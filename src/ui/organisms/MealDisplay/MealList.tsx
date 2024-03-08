@@ -4,7 +4,7 @@ import styles from './style.module.css';
 /*=====  Context imports  =====*/
 import { useMealsContext } from "./providers/MealsProvider"
 /*===== Component imports =====*/
-import Card from "../../molecules/Card";
+import Card from "src/ui/molecules/Card";
 
 function MealList() {
   const meals = useMealsContext();

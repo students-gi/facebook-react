@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 /*=====   Style imports   =====*/
 import styles from './style.module.css';
 /*===== Component imports =====*/
-import Input from '../../atoms/Input';
+import Input from 'src/ui/atoms/Input';
 
 function RegistrationForm() {
   // Defining the use-state hook

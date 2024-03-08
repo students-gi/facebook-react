@@ -2,7 +2,7 @@ import React from 'react';
 /*=====   Style imports   =====*/
 import styles from './style.module.css';
 /*===== Component imports =====*/
-import Card from "../../molecules/Card";
+import Card from 'src/ui/molecules/Card';
 
 function DayTitles() {
   // Getting the required day and time properties
