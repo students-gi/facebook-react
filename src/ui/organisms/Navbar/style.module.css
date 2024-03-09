@@ -1,0 +1,64 @@
+/* CSS code to style the top navbar with dropdowns */
+
+/* Navbar container */
+#Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  margin: -1rem -0.5rem 0 -0.5rem;
+}
+
+/* Category container */
+.category {
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.category:hover {
+  background-color: #666;
+}
+
+/* Category contents */
+.categoryContents {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+
+  margin: 0;
+  padding: 0.5rem;
+  list-style-type: none;
+  background-color: #666;
+}
+
+.category:hover .categoryContents {
+  display: block;
+  z-index: 1;
+}
+
+/* Link styles */
+.categoryTitle,
+.link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+/* Category title */
+.categoryTitle {
+  font-weight: bold;
+}
+
+/* Link item */
+.link {
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #888;
+}
