@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 import Button from "../../atoms/Button";
 

@@ -2,7 +2,7 @@
 // https://www.codevertiser.com/reusable-input-component-react/
 import React from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 
 type InputType = 'text' | 'number' | 'email' | 'password'
 interface InputProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 import Heading1 from 'src/ui/atoms/Heading1';
 import Navbar from 'src/ui/organisms/Navbar';

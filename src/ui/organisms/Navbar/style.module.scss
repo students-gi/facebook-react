@@ -16,10 +16,15 @@
 .category {
   position: relative;
   padding: 0.5rem 1rem;
-}
 
-.category:hover {
-  background-color: #666;
+  &:hover {
+    background-color: #666;
+
+    & .categoryContents {
+      display: block;
+      z-index: 1;
+    }
+  }
 }
 
 /* Category contents */
@@ -35,12 +40,11 @@
   background-color: #666;
 }
 
-.category:hover .categoryContents {
-  display: block;
-  z-index: 1;
+/* Link styles */
+.categoryTitle {
+  font-weight: bold;
 }
 
-/* Link styles */
 .categoryTitle,
 .link {
   display: block;
@@ -49,16 +53,10 @@
   padding: 0.5rem 1rem;
 }
 
-/* Category title */
-.categoryTitle {
-  font-weight: bold;
-}
-
-/* Link item */
 .link {
   transition: background-color 0.3s ease;
-}
 
-.link:hover {
-  background-color: #888;
+  &:hover {
+    background-color: #888;
+  }
 }

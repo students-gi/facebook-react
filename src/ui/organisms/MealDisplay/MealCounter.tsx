@@ -1,6 +1,6 @@
 import React from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*=====  Context imports  =====*/
 import { useMealsContext } from './providers/MealsProvider';
 

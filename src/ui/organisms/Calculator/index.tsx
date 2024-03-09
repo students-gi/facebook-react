@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 import Button from 'src/ui/atoms/Button';
 
@@ -39,39 +39,37 @@ function Calculator() {
   };
 
   return (
-    <div id={styles.Calculator}>
-      <form>
-        <p ref={resultRef}>{result}</p>
-        <input
-          pattern="[0-9]"
-          ref={inputRef}
-          type="number"
-          placeholder="Type a number"
-        />
-        <div className={styles.controls}>
-          <Button
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'plus')}
-            text='add' />
-          <Button
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'minus')}
-            text='subtract' />
-          <Button
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'times')}
-            text='multiply' />
-          <Button
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'divide')}
-            text='divide' />
-          <Button
-            className={styles.reset}
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => resetInput(e)}
-            text='reset the input' />
-          <Button
-            className={styles.reset}
-            onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'reset')}
-            text='reset the result' />
-        </div>
-      </form>
-    </div>
+    <form id={styles.Calculator}>
+      <p ref={resultRef}>{result}</p>
+      <input
+        pattern="[0-9]"
+        ref={inputRef}
+        type="number"
+        placeholder="Type a number"
+      />
+      <div className={styles.controls}>
+        <Button
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'plus')}
+          text='add' />
+        <Button
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'minus')}
+          text='subtract' />
+        <Button
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'times')}
+          text='multiply' />
+        <Button
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'divide')}
+          text='divide' />
+        <Button
+          className={styles.reset}
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => resetInput(e)}
+          text='reset the input' />
+        <Button
+          className={styles.reset}
+          onClick={(e: React.MouseEvent<Element, MouseEvent>) => calculate(e, 'reset')}
+          text='reset the result' />
+      </div>
+    </form>
   );
 }
 

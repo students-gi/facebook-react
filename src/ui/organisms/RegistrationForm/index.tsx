@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 import Input from 'src/ui/atoms/Input';
 

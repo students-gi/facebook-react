@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 
 interface navLink {

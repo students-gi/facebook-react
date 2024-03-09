@@ -1,6 +1,6 @@
 import React from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*=====   Asset imports   =====*/
 import image from 'src/assets/react-digital_ocean.jpg';
 

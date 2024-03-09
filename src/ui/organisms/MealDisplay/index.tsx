@@ -1,6 +1,6 @@
 import React from 'react';
 /*=====   Style imports   =====*/
-import styles from './style.module.css';
+import styles from './style.module.scss';
 /*===== Component imports =====*/
 import MealsProvider from "./providers/MealsProvider"
 import MealList from './MealList';

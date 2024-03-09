@@ -1,4 +1,6 @@
 import React, { MouseEventHandler } from 'react';
+/*=====   Style imports   =====*/
+import styles from './style.module.scss';
 
 type ButtonProps = {
   id?: string,
@@ -12,7 +14,7 @@ function Button({ id, className, text, onClick }: ButtonProps) {
   return (
     <button
       id={id}
-      className={className}
+      className={`${styles.button} ${className}`}
       onClick={onClick}>
       {text}
     </button>
