@@ -62,6 +62,12 @@ function Navbar() {
     {
       title: "React Advanced",
       path: 'advanced',
+      contents: [
+        {
+          path: 'desserts',
+          text: "List of desserts"
+        }
+      ]
     }
   ]
 
