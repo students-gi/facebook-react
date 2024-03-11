@@ -2,15 +2,15 @@ import { RouteObject } from 'react-router-dom';
 /*=====   Page template import   =====*/
 import Assignments from 'src/ui/templates/Assignments'
 /*=====  Body component import   =====*/
-import CardDisplay from 'src/ui/organisms/CardDisplay';
-import GuessANumber from 'src/ui/organisms/GuessANumber';
-import RegistrationForm from 'src/ui/organisms/RegistrationForm';
-import MealDisplay from 'src/ui/organisms/MealDisplay';
-import WalletDisplay from 'src/ui/organisms/WalletDisplay';
-import DayTitles from 'src/ui/organisms/DayTitles';
-import ImageImport from 'src/ui/organisms/ImageImport';
-import Soundboard from 'src/ui/organisms/Soundboard';
-import Calculator from 'src/ui/organisms/Calculator';
+import CardDisplay from 'src/ui/_basic/CardDisplay';
+import GuessANumber from 'src/ui/_basic/GuessANumber';
+import RegistrationForm from 'src/ui/_basic/RegistrationForm';
+import MealDisplay from 'src/ui/_basic/MealDisplay';
+import WalletDisplay from 'src/ui/_basic/WalletDisplay';
+import DayTitles from 'src/ui/_basic/DayTitles';
+import ImageImport from 'src/ui/_basic/ImageImport';
+import Soundboard from 'src/ui/_basic/Soundboard';
+import Calculator from 'src/ui/_basic/Calculator';
 
 const ReactBasicRoutes: RouteObject = {
   path: 'basic',
